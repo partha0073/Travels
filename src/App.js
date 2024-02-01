@@ -13,8 +13,8 @@ function App() {
   return (
    <>
  <Navbar/>
- {/* <Home/>
- <Popular/>
+  <Home/>
+ {/*<Popular/>
  <Offers/>
  <About/>
  <Blog/>
