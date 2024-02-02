@@ -14,9 +14,23 @@ function Navbar() {
   const removeNav = ()=>{
     setActive('navBar')
   }
+
+  // code to add nav background when scroll
+  const[transparent,setTransparent]=useState('header');
+  const addBg= ()=>{
+    if(window.scrollY >=10){
+      setTransparent('header activeHeader')
+    }
+    else{
+      setTransparent('header')
+
+    }
+  }
+window.addEventListener('scroll',addBg)
+
   return (
     <section className="navBarSection">
-      <div className="header">
+      <div className={transparent}>
         {/* logo */}
         <div className="logoDiv">
           <a href="/" className="logo">

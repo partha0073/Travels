@@ -78,8 +78,8 @@
           position: absolute;
           display: flex;
           align-items: flex-start;
-          //   padding: 0;
-          padding: 1rem 1.5rem;
+            padding: 0;
+        //   padding: 1rem 1.5rem;
           justify-content: center;
           flex-direction: column;
           background: linear-gradient(
@@ -88,7 +88,8 @@
           );
           bottom: 0;
           width: 100%;
-          height: 100%;
+        //   height: 100%;
+          height: 0;
           overflow: hidden;
           h3 {
             color: var(--whiteColor);
@@ -138,6 +139,33 @@
             width: 45px;
             border-radius: 1rem;
           }
+        }
+        .destTitle{
+            justify-content: space-between;
+
+            h6{
+                color: var(--blackColor);
+                font-size: 15px;
+            }
+            .flex{
+                font-size: 16px;
+                font-weight: 600;
+                align-items: flex-start;
+                transform: translateY(5px);
+
+                .icon{
+                    color: var(--PrimaryColor);
+                    
+                }
+            }
+        }
+      }
+
+      &:hover{
+        .overlayInfo{
+            overflow: visible;
+            padding: 1rem 1.5rem;
+            height: 100%;
         }
       }
     }

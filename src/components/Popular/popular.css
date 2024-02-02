@@ -74,13 +74,13 @@
   position: absolute;
   display: flex;
   align-items: flex-start;
-  padding: 1rem 1.5rem;
+  padding: 0;
   justify-content: center;
   flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.846), rgba(0, 0, 0, 0.759));
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 0;
   overflow: hidden;
 }
 .popular .mainContent .singleDestination .destImage .overlayInfo h3 {
@@ -129,4 +129,25 @@
   height: 5px;
   width: 45px;
   border-radius: 1rem;
+}
+.popular .mainContent .singleDestination .destFooter .destTitle {
+  justify-content: space-between;
+}
+.popular .mainContent .singleDestination .destFooter .destTitle h6 {
+  color: var(--blackColor);
+  font-size: 15px;
+}
+.popular .mainContent .singleDestination .destFooter .destTitle .flex {
+  font-size: 16px;
+  font-weight: 600;
+  align-items: flex-start;
+  transform: translateY(5px);
+}
+.popular .mainContent .singleDestination .destFooter .destTitle .flex .icon {
+  color: var(--PrimaryColor);
+}
+.popular .mainContent .singleDestination:hover .overlayInfo {
+  overflow: visible;
+  padding: 1rem 1.5rem;
+  height: 100%;
 }/*# sourceMappingURL=popular.css.map */
