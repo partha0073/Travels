@@ -111,4 +111,56 @@
 .navBarSection .activeHeader {
   background: var(--greyText);
   box-shadow: 0 2 px 8px 2px rgba(178, 178, 178, 0.45);
+}
+
+@media screen and (min-width: 769px) {
+  .toggleNavbar,
+  .closeNavbar {
+    display: none;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .header .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .header .navBar .navItem .navLink {
+    color: var(--whiteColor);
+    padding: 0.45rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .header .navBar .navItem .navLink:hover {
+    color: var(--PrimaryColor);
+  }
+  .header .navBar .btn {
+    margin-left: 1rem;
+  }
+  .header .navBar .btn a {
+    color: var(--whiteColor);
+    font-weight: 500;
+  }
+  .header .navBar .loginBtn {
+    background: none;
+    border: 1px solid var(--PrimaryColor);
+  }
+  .header .navBar .loginBtn:hover {
+    background: var(--PrimaryColor);
+  }
+  .header .navBar .loginBtn:hover a {
+    color: var(--whiteColor);
+  }
+}
+@media screen and (min-width: 960px) {
+  .header .navBar .navLists .navItem {
+    padding: 0 0.7rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 1rem 8.5rem !important;
+  }
 }/*# sourceMappingURL=navbar.css.map */

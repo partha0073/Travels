@@ -15,10 +15,34 @@ function About() {
             <h3>100+ Mountains</h3>
             <p>
               Research shows that a chance to break away from the normal rhythms
+              of daily life reduces stress.
+            </p>
+          </div>
+        </div> 
+        
+        <div className="mainContent container grid">
+          <div className="singleItem">
+            <img src={img} alt="no img" />
+            <h3>100+ Mountains</h3>
+            <p>
+              Research shows that a chance to break away from the normal rhythms
               of daily life reduces stress
             </p>
           </div>
         </div>
+        
+        <div className="mainContent container grid">
+          <div className="singleItem">
+            <img src={img} alt="no img" />
+            <h3>100+ Mountains</h3>
+            <p>
+              Research shows that a chance to break away from the normal rhythms
+              of daily life reduces stress
+            </p>
+          </div>
+        </div>
+
+        
 
         <div className="videoCard container">
           <div className="cardContent grid">
