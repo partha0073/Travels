@@ -9,13 +9,15 @@ import Offers from './components/Offers/Offers';
 import Popular from './components/Popular/Popular';
 
 
+
 function App() {
+ 
   return (
    <>
  <Navbar/>
   <Home/>
  <Popular/>
- <Offers/>
+ <Offers />
  <About/>
  <Blog/>
  <Footer/> 

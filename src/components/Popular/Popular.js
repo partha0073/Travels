@@ -1,16 +1,23 @@
 import React from "react";
+import { useEffect } from "react";
 import "./popular.css";
 import { BsArrowLeftShort } from "react-icons/bs";
 import { BsArrowRightShort } from "react-icons/bs";
 import { BsDot } from "react-icons/bs";
-import img from "../../Assets/card1.jpg";
+
 // import card images
 import img1 from "../../Assets/paris.jpg";
 import img2 from "../../Assets/sikkim.jpg";
 import img3 from "../../Assets/Tokyo.jpg";
 import img4 from "../../Assets/Rio de Janeiro.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Popular() {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   const data = [
     {
       id: 1,
@@ -45,7 +52,7 @@ function Popular() {
   return (
     <section className="popular section container">
       <div className="secContainer">
-        <div className="secHeader flex">
+        <div data-aos="fade-right" data-aos-duration="2000" className="secHeader flex">
           <div className="textDiv">
             <h2 className="secTitle">Popular Destination</h2>
             <p>
@@ -54,7 +61,7 @@ function Popular() {
             </p>
           </div>
 
-          <div className="iconsDiv flex">
+          <div data-aos="fade-left" data-aos-duration="2500" className="iconsDiv flex">
             <BsArrowLeftShort className="icon leftIcon" />
             <BsArrowRightShort className="icon" />
           </div>
